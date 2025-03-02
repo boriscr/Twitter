@@ -71,7 +71,7 @@
                     text-decoration: underline;
                     text-decoration-thickness: 4px;
                     text-underline-offset: 15px;
-                    text-decoration-color: var(--color-twitter);
+                    text-decoration-color: var(--color-twitter2);
                 }
             }
 
@@ -138,7 +138,7 @@
             padding: 2px;
             color: rgba(240, 248, 255, 0.507);
             border-radius: 40px;
-            border: 2px solid var(--color-twitter);
+            border: 2px solid var(--color-twitter2);
 
             input {
                 border: none;
@@ -160,7 +160,7 @@
                 width: 100px;
                 border-radius: 30px;
                 color: var(--color-white);
-                background-color: var(--color-twitter);
+                background-color: var(--color-twitter2);
             }
         }
     }
