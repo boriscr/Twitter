@@ -33,21 +33,54 @@
                     align-items: center;
                     border: none;
                     height: 50px;
+                    width: 80%;
+                    margin: 5% 10%;
+                    border-radius: 50px;
+                    font-weight: bolder;
+                }
+            }
+
+            a {
+                text-decoration: none;
+            }
+
+            .perfil-option {
+                margin: 10px;
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                padding: 8px;
+
+                &:hover {
+                    border-radius: 30px;
+                    background-color: var(--color-ligth-secundario);
+                }
+
+                .info-user-img {
+                    width: 50px;
+
+                    img {
+                        width: 35px;
+                        height: 35px;
+                        border-radius: 100px;
+                    }
+                }
+
+                .info-user {
                     width: 100%;
-                    border-radius: 10px;
                 }
             }
         }
     }
 }
-
+//Column 2 nav/////////////////////////////////////////////////////////////////////////////////
 .content-index {
     display: flex;
     flex-direction: row;
     width: 100%;
 
     .nav-content {
-        width: 250px;
+        width: 330px;
 
         * {
             display: flex;
@@ -127,6 +160,7 @@
         }
     }
 
+//Column 3////////////////////////////////////////////////////////////////////////
     .extras-content {
         width: 30%;
         padding: 5px 20px;
@@ -172,10 +206,15 @@
 /// 
 .post-section-container {
     color: var(--color-white);
+
     .post-box {
         padding: 20px;
+        gap: 10px;
         display: flex;
         border: 1px solid var(--color-ligth-secundario);
+        a{
+            text-decoration: none;
+        }
         .col-1 {
             img {
                 width: 40px;
@@ -187,7 +226,7 @@
         .post-body-box {
             width: 100%;
 
-            .intereacciones-content{
+            .intereacciones-content {
                 display: flex;
                 justify-content: space-around;
 

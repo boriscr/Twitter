@@ -13,6 +13,7 @@ return new class extends Migration
     {
         Schema::create('twitter_posts', function (Blueprint $table) {
             $table->id();
+            $table->foreignId('user_id')->constrained()->onDelete('cascade');
             $table->string('post');
             $table->integer('comentario')->default(0);
             $table->integer('reposteo')->default(0);

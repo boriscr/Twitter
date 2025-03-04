@@ -7,7 +7,7 @@ Route::middleware('auth')->group(function(){
     Route::get('/',[PostController::class,'index'])->name('home');
     Route::post('Post/',[PostController::class,'store'])->name('NewPost');
     Route::post('like/{id}',[PostController::class,'like'])->name('like');
-
+    Route::get('/perfil/{user_ide}',[PostController::class,'perfil'])->name('perfil');
 });
 /*
 Route::get('/', function () {
