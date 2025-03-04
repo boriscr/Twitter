@@ -12,7 +12,7 @@ class User extends Authenticatable
 {
     public function posts()
     {
-        return $this->hasMany(TwitterPost::class);
+        return $this->hasMany(TwitterPost::class,'user_id');
     }
     /** @use HasFactory<\Database\Factories\UserFactory> */
     use HasFactory, Notifiable;

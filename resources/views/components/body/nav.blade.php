@@ -29,7 +29,7 @@
                 <a href="#">
                     <div class="perfil-option">
                         <div class="info-user-img col-1">
-                            <img src="{{ asset('storage/img/'. Auth::user()->img) }}" alt="">
+                            <img src="{{ asset('storage/img/'. Auth::user()->img_perfil) }}" alt="">
                         </div>
                         <div class="info-user">
                             <span>{{ explode(' ', Auth::user()->name)[0] }}</span>

@@ -1,5 +1,5 @@
 <div class="col-1">
-    <img src="{{asset('img/img.jpg')}}" alt="img-perfil">
+    <img src="{{asset('img/'. Auth::user()->img_perfil)}}" alt="img-perfil">
 </div>
 <div class="col">
     <form action="{{route('NewPost')}}" method="post">

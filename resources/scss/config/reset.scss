@@ -1,81 +1,108 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-:root{
-    --color-black:black;
+:root {
+    --color-black: black;
     --color-white: white;
-    --color-ligth-secundario:#ffffff2b;
-    --color-twitter:rgb(29, 155, 240);
-    --color-twitter2:#95012b;
+    --color-ligth-secundario: #ffffff2b;
+    --color-twitter: rgb(29, 155, 240);
+    --color-twitter2: #95012b;
 }
 
-@media (prefers-color-scheme: dark){
-    body{
+@media (prefers-color-scheme: dark) {
+    body {
         background-color: var(--color-black);
-        *{
+
+        * {
             color: var(--color-white);
         }
     }
-    .navbar{
-        .navbar-nav .nav-link:hover{
+
+    .navbar {
+        .navbar-nav .nav-link:hover {
             color: var(--color-white);
             background-color: var(--color-ligth-secundario);
             border-radius: 30px;
         }
+
         .navbar-nav .nav-link.active {
             font-weight: bolder;
             color: var(--color-white) !important;
         }
-        *{
+
+        * {
             color: var(--color-white);
-            button{
+
+            button {
                 color: var(--color-black);
                 background: var(--color-white);
             }
         }
-        select{
+
+        select {
             background-color: var(--color-black);
         }
 
     }
-    .contenido-content{
+
+    .contenido-content {
         border: 1px solid var(--color-ligth-secundario);
     }
-    
-    .intereacciones-content{
-        button{
+
+    .intereacciones-content {
+        button {
             color: var(--color-white);
         }
     }
-    .container-create-post{
-        form{
-            textarea{
+
+    .container-create-post {
+        form {
+            textarea {
                 color: var(--color-white);
             }
         }
     }
-    .extras-content{
-        form{
-            input{
+
+    .extras-content {
+        form {
+            input {
                 color: var(--color-white) !important;
             }
-            input::placeholder{
+
+            input::placeholder {
                 color: rgba(240, 248, 255, 0.507);
 
             }
         }
     }
-    /*Perfil secction*/
-    .nav-heder-perfil-container{
-        *{
-            color: var(--color-white);
 
+    /*Perfil secction*/
+    .nav-heder-perfil-container {
+        * {
+            color: var(--color-white);
+        }
+
+        .opciones-perfil {
+            button {
+                background-color: #95012b;
+            }
         }
     }
+
+    .edit-perfil-container {
+        background-color: #000;
+        border: 1px solid var(--color-ligth-secundario);
+        #btn-edit-cerrar{
+            background-color: transparent;
+            color: var(--color-white);
+        }
+
+    }
 }
-@media (prefers-color-scheme: light){
+
+@media (prefers-color-scheme: light) {
     //
 }

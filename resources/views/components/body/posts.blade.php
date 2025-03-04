@@ -4,7 +4,7 @@
             <a href="{{route('perfil',$item->user->id)}}">
                 <div class="col-1">
                     @if ($item->img == null)
-                        <img src="{{ asset('img/'. $item->user->img) }}" alt="img-perfil">
+                        <img src="{{ asset('img/'. $item->user->img_perfil) }}" alt="img-perfil">
                     @endif
                 </div>
             </a>

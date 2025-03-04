@@ -8,6 +8,7 @@ Route::middleware('auth')->group(function(){
     Route::post('Post/',[PostController::class,'store'])->name('NewPost');
     Route::post('like/{id}',[PostController::class,'like'])->name('like');
     Route::get('/perfil/{user_ide}',[PostController::class,'perfil'])->name('perfil');
+    Route::post('editPerfil/{id}',[PostController::class,'editPerfil'])->name('editPerfil');
 });
 /*
 Route::get('/', function () {
